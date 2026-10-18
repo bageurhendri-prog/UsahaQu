@@ -1,0 +1,14 @@
+{
+  "appId": "com.bengkelqu.app",
+  "appName": "Usaha Qu 1.85",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  }
+}

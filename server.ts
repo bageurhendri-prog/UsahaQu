@@ -13,7 +13,8 @@
  * Terintegrasi dengan Vite Middleware di mode dev dan Static dist di mode production.
  */
 
-import express, { Request, Response, NextFunction } from 'express';
+import express from 'express';
+import type { Request, Response, NextFunction } from 'express';
 import { createServer as createViteServer } from 'vite';
 import dotenv from 'dotenv';
 import path from 'path';
@@ -25,7 +26,7 @@ import {
   getPaymentStatus,
   simulatePaymentSuccess,
   TRIPAY_CONFIG
-} from './src/server/tripayService.js';
+} from './src/server/tripayService.ts';
 
 dotenv.config();
 
